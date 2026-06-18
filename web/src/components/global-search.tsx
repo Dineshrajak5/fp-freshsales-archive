@@ -92,7 +92,7 @@ export function GlobalSearch() {
   const iconFor = (kind: Result["kind"]) => {
     if (kind === "college") return <Building2 className="w-3.5 h-3.5 text-navy" />;
     if (kind === "contact") return <User className="w-3.5 h-3.5 text-coral" />;
-    return <Briefcase className="w-3.5 h-3.5 text-teal-accent" />;
+    return <Briefcase className="w-3.5 h-3.5 text-green-accent" />;
   };
 
   const hrefFor = (r: Result) => {

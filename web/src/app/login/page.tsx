@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { CoBrandLockup } from "@/components/cobrand-lockup";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -36,13 +37,8 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-canvas px-4">
       <div className="w-full max-w-sm bg-surface rounded-xl border border-line shadow-sm p-8">
         <div className="mb-7 flex flex-col items-center text-center">
-          <span className="w-11 h-11 rounded-lg bg-coral flex items-center justify-center text-white text-lg font-bold mb-3">
-            F
-          </span>
-          <h1 className="text-lg font-bold text-ink">
-            FACE Prep <span className="text-coral">Archive</span>
-          </h1>
-          <p className="text-sm text-ink-muted mt-1">
+          <CoBrandLockup height={26} />
+          <p className="text-sm text-ink-muted mt-4">
             Sign in to browse the archive
           </p>
         </div>

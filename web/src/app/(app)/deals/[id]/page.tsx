@@ -142,8 +142,8 @@ export default async function DealDetail({ params }: PageProps) {
 
       <div className="bg-surface border rounded-lg p-6 mb-6">
         <div className="flex items-start gap-3">
-          <div className="w-10 h-10 rounded-md bg-teal-50 flex items-center justify-center flex-shrink-0">
-            <Briefcase className="w-5 h-5 text-teal-accent" />
+          <div className="w-10 h-10 rounded-md bg-green-50 flex items-center justify-center flex-shrink-0">
+            <Briefcase className="w-5 h-5 text-green-accent" />
           </div>
           <div className="min-w-0 flex-1">
             <h1 className="text-xl font-semibold text-ink break-words">
