@@ -90,9 +90,9 @@ export function GlobalSearch() {
   }, [query]);
 
   const iconFor = (kind: Result["kind"]) => {
-    if (kind === "college") return <Building2 className="w-3.5 h-3.5 text-blue-500" />;
-    if (kind === "contact") return <User className="w-3.5 h-3.5 text-purple-500" />;
-    return <Briefcase className="w-3.5 h-3.5 text-emerald-500" />;
+    if (kind === "college") return <Building2 className="w-3.5 h-3.5 text-navy" />;
+    if (kind === "contact") return <User className="w-3.5 h-3.5 text-coral" />;
+    return <Briefcase className="w-3.5 h-3.5 text-teal-accent" />;
   };
 
   const hrefFor = (r: Result) => {
@@ -113,7 +113,7 @@ export function GlobalSearch() {
     <div ref={containerRef} className="relative flex-1 max-w-md">
       <form onSubmit={handleSubmit}>
         <div className="relative">
-          <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-400" />
+          <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#8d97a8]" />
           <input
             type="text"
             value={query}
@@ -123,7 +123,7 @@ export function GlobalSearch() {
             }}
             onFocus={() => setOpen(true)}
             placeholder="Search colleges, contacts, deals..."
-            className="w-full pl-8 pr-3 py-1.5 text-sm bg-gray-50 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white"
+            className="w-full pl-8 pr-3 py-1.5 text-sm text-white bg-navy-700 border border-navy-800 rounded-md placeholder:text-[#8d97a8] focus:outline-none focus:ring-2 focus:ring-coral focus:bg-navy-800"
           />
           {loading && (
             <Loader2 className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-400 animate-spin" />
@@ -142,7 +142,7 @@ export function GlobalSearch() {
                   <Link
                     href={hrefFor(r)}
                     onClick={() => setOpen(false)}
-                    className="flex items-start gap-2 px-3 py-2 hover:bg-gray-50 border-b last:border-b-0"
+                    className="flex items-start gap-2 px-3 py-2 hover:bg-coral-50 border-b last:border-b-0"
                   >
                     <div className="mt-0.5">{iconFor(r.kind)}</div>
                     <div className="min-w-0 flex-1">

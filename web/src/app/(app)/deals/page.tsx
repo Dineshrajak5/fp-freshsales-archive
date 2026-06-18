@@ -60,7 +60,7 @@ export default async function DealsPage({
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
       <div className="flex items-baseline justify-between mb-4">
-        <h1 className="text-xl font-semibold text-gray-900">Deals</h1>
+        <h1 className="text-xl font-semibold text-ink">Deals</h1>
         <div className="text-sm text-gray-500">
           {count?.toLocaleString()} {count === 1 ? "result" : "results"}
         </div>
@@ -74,13 +74,13 @@ export default async function DealsPage({
             name="q"
             defaultValue={q}
             placeholder="Search title or college..."
-            className="w-full pl-9 pr-3 py-2 text-sm bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full pl-9 pr-3 py-2 text-sm bg-surface border border-line rounded-md focus:outline-none focus:ring-2 focus:ring-coral"
           />
         </div>
         <select
           name="stage"
           defaultValue={stage}
-          className="px-3 py-2 text-sm bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="px-3 py-2 text-sm bg-surface border border-line rounded-md focus:outline-none focus:ring-2 focus:ring-coral"
         >
           <option value="">All stages</option>
           {STAGES.map((s) => (
@@ -89,16 +89,16 @@ export default async function DealsPage({
         </select>
         <button
           type="submit"
-          className="px-4 py-2 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700"
+          className="px-4 py-2 text-sm bg-coral text-white rounded-md hover:bg-coral-700"
         >
           Apply
         </button>
       </form>
 
-      <div className="bg-white border rounded-lg overflow-hidden">
+      <div className="bg-surface border rounded-lg overflow-hidden">
         <table className="w-full text-sm">
-          <thead className="bg-gray-50 border-b">
-            <tr className="text-left text-xs text-gray-500 uppercase">
+          <thead className="bg-line-soft border-b border-line">
+            <tr className="text-left text-[11px] tracking-wide text-ink-soft uppercase">
               <th className="px-4 py-2 font-medium">Title</th>
               <th className="px-4 py-2 font-medium hidden lg:table-cell">College</th>
               <th className="px-4 py-2 font-medium">Stage</th>
@@ -115,15 +115,15 @@ export default async function DealsPage({
               </tr>
             ) : (
               deals?.map((d) => (
-                <tr key={d.id} className="border-b last:border-b-0 hover:bg-gray-50">
+                <tr key={d.id} className="border-b last:border-b-0 hover:bg-coral-50">
                   <td className="px-4 py-2.5">
-                    <Link href={`/deals/${d.id}`} className="text-blue-600 hover:underline font-medium">
+                    <Link href={`/deals/${d.id}`} className="text-coral-600 hover:underline font-medium">
                       {d.opportunity_title || "(untitled)"}
                     </Link>
                   </td>
                   <td className="px-4 py-2.5 text-gray-600 hidden lg:table-cell">
                     {d.client_name_id ? (
-                      <Link href={`/colleges/${d.client_name_id}`} className="text-blue-600 hover:underline">
+                      <Link href={`/colleges/${d.client_name_id}`} className="text-coral-600 hover:underline">
                         {d.client_name || "-"}
                       </Link>
                     ) : (
@@ -149,12 +149,12 @@ export default async function DealsPage({
           </div>
           <div className="flex gap-2">
             {page > 1 && (
-              <Link href={buildHref({ page: String(page - 1) })} className="px-3 py-1.5 border rounded-md bg-white hover:bg-gray-50">
+              <Link href={buildHref({ page: String(page - 1) })} className="px-3 py-1.5 border rounded-md bg-surface hover:bg-coral-50">
                 Previous
               </Link>
             )}
             {page < totalPages && (
-              <Link href={buildHref({ page: String(page + 1) })} className="px-3 py-1.5 border rounded-md bg-white hover:bg-gray-50">
+              <Link href={buildHref({ page: String(page + 1) })} className="px-3 py-1.5 border rounded-md bg-surface hover:bg-coral-50">
                 Next
               </Link>
             )}

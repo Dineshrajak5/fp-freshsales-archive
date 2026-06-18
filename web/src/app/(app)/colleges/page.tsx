@@ -44,7 +44,7 @@ export default async function CollegesPage({
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
       <div className="flex items-baseline justify-between mb-4">
-        <h1 className="text-xl font-semibold text-gray-900">Colleges</h1>
+        <h1 className="text-xl font-semibold text-ink">Colleges</h1>
         <div className="text-sm text-gray-500">
           {count?.toLocaleString()} {count === 1 ? "result" : "results"}
         </div>
@@ -58,15 +58,15 @@ export default async function CollegesPage({
             name="q"
             defaultValue={q}
             placeholder="Search by college name..."
-            className="w-full pl-9 pr-3 py-2 text-sm bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full pl-9 pr-3 py-2 text-sm bg-surface border border-line rounded-md focus:outline-none focus:ring-2 focus:ring-coral"
           />
         </div>
       </form>
 
-      <div className="bg-white border rounded-lg overflow-hidden">
+      <div className="bg-surface border rounded-lg overflow-hidden">
         <table className="w-full text-sm">
-          <thead className="bg-gray-50 border-b">
-            <tr className="text-left text-xs text-gray-500 uppercase">
+          <thead className="bg-line-soft border-b border-line">
+            <tr className="text-left text-[11px] tracking-wide text-ink-soft uppercase">
               <th className="px-4 py-2 font-medium">College</th>
               <th className="px-4 py-2 font-medium hidden md:table-cell">City</th>
               <th className="px-4 py-2 font-medium hidden md:table-cell">State</th>
@@ -82,11 +82,11 @@ export default async function CollegesPage({
               </tr>
             ) : (
               colleges?.map((c) => (
-                <tr key={c.id} className="border-b last:border-b-0 hover:bg-gray-50">
+                <tr key={c.id} className="border-b last:border-b-0 hover:bg-coral-50">
                   <td className="px-4 py-2.5">
                     <Link
                       href={`/colleges/${c.id}`}
-                      className="text-blue-600 hover:underline font-medium"
+                      className="text-coral-600 hover:underline font-medium"
                     >
                       {c.college_name || "(unnamed)"}
                     </Link>
@@ -119,7 +119,7 @@ export default async function CollegesPage({
                   ...(q ? { q } : {}),
                   page: String(page - 1),
                 })}`}
-                className="px-3 py-1.5 border rounded-md bg-white hover:bg-gray-50"
+                className="px-3 py-1.5 border rounded-md bg-surface hover:bg-coral-50"
               >
                 Previous
               </Link>
@@ -130,7 +130,7 @@ export default async function CollegesPage({
                   ...(q ? { q } : {}),
                   page: String(page + 1),
                 })}`}
-                className="px-3 py-1.5 border rounded-md bg-white hover:bg-gray-50"
+                className="px-3 py-1.5 border rounded-md bg-surface hover:bg-coral-50"
               >
                 Next
               </Link>

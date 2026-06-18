@@ -140,17 +140,17 @@ export default async function DealDetail({ params }: PageProps) {
         All deals
       </Link>
 
-      <div className="bg-white border rounded-lg p-6 mb-6">
+      <div className="bg-surface border rounded-lg p-6 mb-6">
         <div className="flex items-start gap-3">
-          <div className="w-10 h-10 rounded-md bg-emerald-50 flex items-center justify-center flex-shrink-0">
-            <Briefcase className="w-5 h-5 text-emerald-600" />
+          <div className="w-10 h-10 rounded-md bg-teal-50 flex items-center justify-center flex-shrink-0">
+            <Briefcase className="w-5 h-5 text-teal-accent" />
           </div>
           <div className="min-w-0 flex-1">
-            <h1 className="text-xl font-semibold text-gray-900 break-words">
+            <h1 className="text-xl font-semibold text-ink break-words">
               {deal.opportunity_title || "(untitled deal)"}
             </h1>
             {deal.client_name_id && (
-              <Link href={`/colleges/${deal.client_name_id}`} className="text-sm text-blue-600 hover:underline mt-1 inline-block">
+              <Link href={`/colleges/${deal.client_name_id}`} className="text-sm text-coral-600 hover:underline mt-1 inline-block">
                 {deal.client_name || "View college"}
               </Link>
             )}
@@ -184,7 +184,7 @@ export default async function DealDetail({ params }: PageProps) {
             id: "overview",
             label: "Overview",
             content: (
-              <div className="bg-white border rounded-lg p-6">
+              <div className="bg-surface border rounded-lg p-6">
                 <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                   {highlights.map((row) => (
                     <div key={row.label} className="flex justify-between sm:block">
@@ -199,7 +199,7 @@ export default async function DealDetail({ params }: PageProps) {
                     <div className="text-xs text-gray-500 uppercase font-medium mb-2">Tags</div>
                     <div className="flex flex-wrap gap-1.5">
                       {deal.tags.split(";").map((t: string) => t.trim()).filter(Boolean).map((t: string) => (
-                        <span key={t} className="text-xs bg-gray-100 text-gray-700 rounded px-2 py-0.5">{t}</span>
+                        <span key={t} className="text-xs bg-navy-50 text-navy rounded px-2 py-0.5">{t}</span>
                       ))}
                     </div>
                   </div>
@@ -212,13 +212,13 @@ export default async function DealDetail({ params }: PageProps) {
             label: "Contacts",
             count: contacts?.length ?? 0,
             content: (
-              <div className="bg-white border rounded-lg overflow-hidden">
+              <div className="bg-surface border rounded-lg overflow-hidden">
                 {!contacts?.length ? (
                   <div className="p-6 text-sm text-gray-500">No contacts linked.</div>
                 ) : (
                   <table className="w-full text-sm">
-                    <thead className="bg-gray-50 border-b">
-                      <tr className="text-left text-xs text-gray-500 uppercase">
+                    <thead className="bg-line-soft border-b border-line">
+                      <tr className="text-left text-[11px] tracking-wide text-ink-soft uppercase">
                         <th className="px-4 py-2 font-medium">Name</th>
                         <th className="px-4 py-2 font-medium hidden md:table-cell">Designation</th>
                         <th className="px-4 py-2 font-medium hidden md:table-cell">Mobile</th>
@@ -226,9 +226,9 @@ export default async function DealDetail({ params }: PageProps) {
                     </thead>
                     <tbody>
                       {contacts.map((c) => (
-                        <tr key={c.id} className="border-b last:border-b-0 hover:bg-gray-50">
+                        <tr key={c.id} className="border-b last:border-b-0 hover:bg-coral-50">
                           <td className="px-4 py-2.5">
-                            <Link href={`/contacts/${c.id}`} className="text-blue-600 hover:underline">
+                            <Link href={`/contacts/${c.id}`} className="text-coral-600 hover:underline">
                               {[c.first_name, c.full_name].filter(Boolean).join(" ") || "(unnamed)"}
                             </Link>
                           </td>
@@ -249,10 +249,10 @@ export default async function DealDetail({ params }: PageProps) {
             content: (
               <div className="space-y-3">
                 {!timeline.length ? (
-                  <div className="bg-white border rounded-lg p-6 text-sm text-gray-500">No activity recorded.</div>
+                  <div className="bg-surface border rounded-lg p-6 text-sm text-gray-500">No activity recorded.</div>
                 ) : (
                   timeline.map((item) => (
-                    <div key={item.id} className="bg-white border rounded-lg p-4">
+                    <div key={item.id} className="bg-surface border rounded-lg p-4">
                       <div className="flex items-start justify-between gap-3">
                         <div className="min-w-0 flex-1">
                           <div className="text-xs text-gray-500 uppercase font-medium">{item.kind}</div>
@@ -275,7 +275,7 @@ export default async function DealDetail({ params }: PageProps) {
             label: "All fields",
             count: allRows.length,
             content: (
-              <div className="bg-white border rounded-lg p-6">
+              <div className="bg-surface border rounded-lg p-6">
                 <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                   {allRows.map((row) => (
                     <div key={row.label}>

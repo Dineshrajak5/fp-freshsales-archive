@@ -134,20 +134,20 @@ export default async function ContactDetail({ params }: PageProps) {
         All contacts
       </Link>
 
-      <div className="bg-white border rounded-lg p-6 mb-6">
+      <div className="bg-surface border rounded-lg p-6 mb-6">
         <div className="flex items-start gap-3">
-          <div className="w-10 h-10 rounded-md bg-purple-50 flex items-center justify-center flex-shrink-0">
-            <User className="w-5 h-5 text-purple-600" />
+          <div className="w-10 h-10 rounded-md bg-coral-50 flex items-center justify-center flex-shrink-0">
+            <User className="w-5 h-5 text-coral" />
           </div>
           <div className="min-w-0 flex-1">
-            <h1 className="text-xl font-semibold text-gray-900 break-words">{fullName}</h1>
+            <h1 className="text-xl font-semibold text-ink break-words">{fullName}</h1>
             {contact.disignation && (
               <div className="text-sm text-gray-600 mt-0.5">{contact.disignation}</div>
             )}
             {contact.account_id && (
               <Link
                 href={`/colleges/${contact.account_id}`}
-                className="text-sm text-blue-600 hover:underline mt-1 inline-block"
+                className="text-sm text-coral-600 hover:underline mt-1 inline-block"
               >
                 {contact.account || "View college"}
               </Link>
@@ -171,7 +171,7 @@ export default async function ContactDetail({ params }: PageProps) {
         </div>
 
         {contact.recent_note && (
-          <div className="mt-4 text-sm text-gray-700 bg-gray-50 border border-gray-200 rounded-md px-3 py-2">
+          <div className="mt-4 text-sm text-gray-700 bg-gray-50 border border-line rounded-md px-3 py-2">
             <span className="text-xs text-gray-500 uppercase font-medium">Recent note: </span>
             {contact.recent_note}
           </div>
@@ -184,7 +184,7 @@ export default async function ContactDetail({ params }: PageProps) {
             id: "overview",
             label: "Overview",
             content: (
-              <div className="bg-white border rounded-lg p-6">
+              <div className="bg-surface border rounded-lg p-6">
                 <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                   {overviewRows.map((row) => (
                     <div key={row.label} className="flex justify-between sm:block">
@@ -202,7 +202,7 @@ export default async function ContactDetail({ params }: PageProps) {
                         <div key={e.email} className="text-sm text-gray-700">
                           {e.email}
                           {e.primary === "true" && (
-                            <span className="ml-2 text-xs bg-blue-50 text-blue-700 rounded px-1.5 py-0.5">primary</span>
+                            <span className="ml-2 text-xs bg-coral-50 text-coral-700 rounded px-1.5 py-0.5">primary</span>
                           )}
                           {e.email_status === "bounced" && (
                             <span className="ml-2 text-xs bg-red-50 text-red-700 rounded px-1.5 py-0.5">bounced</span>
@@ -220,13 +220,13 @@ export default async function ContactDetail({ params }: PageProps) {
             label: "Deals",
             count: deals?.length ?? 0,
             content: (
-              <div className="bg-white border rounded-lg overflow-hidden">
+              <div className="bg-surface border rounded-lg overflow-hidden">
                 {!deals?.length ? (
                   <div className="p-6 text-sm text-gray-500">No deals.</div>
                 ) : (
                   <table className="w-full text-sm">
-                    <thead className="bg-gray-50 border-b">
-                      <tr className="text-left text-xs text-gray-500 uppercase">
+                    <thead className="bg-line-soft border-b border-line">
+                      <tr className="text-left text-[11px] tracking-wide text-ink-soft uppercase">
                         <th className="px-4 py-2 font-medium">Title</th>
                         <th className="px-4 py-2 font-medium">Stage</th>
                         <th className="px-4 py-2 font-medium hidden md:table-cell">Closed</th>
@@ -234,9 +234,9 @@ export default async function ContactDetail({ params }: PageProps) {
                     </thead>
                     <tbody>
                       {deals.map((d) => (
-                        <tr key={d.id} className="border-b last:border-b-0 hover:bg-gray-50">
+                        <tr key={d.id} className="border-b last:border-b-0 hover:bg-coral-50">
                           <td className="px-4 py-2.5">
-                            <Link href={`/deals/${d.id}`} className="text-blue-600 hover:underline">
+                            <Link href={`/deals/${d.id}`} className="text-coral-600 hover:underline">
                               {d.opportunity_title || "(untitled)"}
                             </Link>
                           </td>
@@ -259,10 +259,10 @@ export default async function ContactDetail({ params }: PageProps) {
             content: (
               <div className="space-y-3">
                 {!timeline.length ? (
-                  <div className="bg-white border rounded-lg p-6 text-sm text-gray-500">No activity recorded.</div>
+                  <div className="bg-surface border rounded-lg p-6 text-sm text-gray-500">No activity recorded.</div>
                 ) : (
                   timeline.map((item) => (
-                    <div key={item.id} className="bg-white border rounded-lg p-4">
+                    <div key={item.id} className="bg-surface border rounded-lg p-4">
                       <div className="flex items-start justify-between gap-3">
                         <div className="min-w-0 flex-1">
                           <div className="text-xs text-gray-500 uppercase font-medium">{item.kind}</div>

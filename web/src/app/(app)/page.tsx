@@ -39,7 +39,7 @@ export default async function HomePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
       <div className="mb-8">
-        <h1 className="text-xl font-semibold text-gray-900">Archive overview</h1>
+        <h1 className="text-xl font-semibold text-ink">Archive overview</h1>
         <p className="text-sm text-gray-500 mt-1">
           Signed in as {user?.email}
         </p>
@@ -52,13 +52,13 @@ export default async function HomePage() {
             <Link
               key={tile.href}
               href={tile.href}
-              className="bg-white rounded-lg border p-6 hover:border-gray-400 hover:shadow-sm transition"
+              className="bg-surface rounded-lg border border-line p-6 hover:border-coral hover:shadow-sm transition"
             >
               <div className="flex items-center justify-between">
-                <div className="text-sm text-gray-500">{tile.label}</div>
-                <Icon className="w-4 h-4 text-gray-400" />
+                <div className="text-sm font-semibold text-ink-muted">{tile.label}</div>
+                <Icon className="w-4 h-4 text-coral" />
               </div>
-              <div className="text-3xl font-semibold mt-2">
+              <div className="text-3xl font-bold text-ink mt-2">
                 {tile.count?.toLocaleString()}
               </div>
             </Link>

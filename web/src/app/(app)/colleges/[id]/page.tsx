@@ -143,13 +143,13 @@ export default async function CollegeDetail({ params }: PageProps) {
         All colleges
       </Link>
 
-      <div className="bg-white border rounded-lg p-6 mb-6">
+      <div className="bg-surface border rounded-lg p-6 mb-6">
         <div className="flex items-start gap-3">
-          <div className="w-10 h-10 rounded-md bg-blue-50 flex items-center justify-center flex-shrink-0">
-            <Building2 className="w-5 h-5 text-blue-600" />
+          <div className="w-10 h-10 rounded-md bg-navy-50 flex items-center justify-center flex-shrink-0">
+            <Building2 className="w-5 h-5 text-navy" />
           </div>
           <div className="min-w-0 flex-1">
-            <h1 className="text-xl font-semibold text-gray-900 break-words">
+            <h1 className="text-xl font-semibold text-ink break-words">
               {account.college_name || "(unnamed college)"}
             </h1>
             {(account.city || account.state) && (
@@ -163,7 +163,7 @@ export default async function CollegeDetail({ params }: PageProps) {
                 href={cleanWebsite}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm text-blue-600 hover:underline mt-1 inline-flex items-center gap-1"
+                className="text-sm text-coral-600 hover:underline mt-1 inline-flex items-center gap-1"
               >
                 Website <ExternalLink className="w-3 h-3" />
               </a>
@@ -172,7 +172,7 @@ export default async function CollegeDetail({ params }: PageProps) {
         </div>
 
         {account.recent_note && (
-          <div className="mt-4 text-sm text-gray-700 bg-gray-50 border border-gray-200 rounded-md px-3 py-2">
+          <div className="mt-4 text-sm text-gray-700 bg-gray-50 border border-line rounded-md px-3 py-2">
             <span className="text-xs text-gray-500 uppercase font-medium">Recent note: </span>
             {account.recent_note}
           </div>
@@ -185,7 +185,7 @@ export default async function CollegeDetail({ params }: PageProps) {
             id: "overview",
             label: "Overview",
             content: (
-              <div className="bg-white border rounded-lg p-6">
+              <div className="bg-surface border rounded-lg p-6">
                 <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                   {overviewRows.map((row) => (
                     <div key={row.label} className="flex justify-between sm:block">
@@ -199,7 +199,7 @@ export default async function CollegeDetail({ params }: PageProps) {
                     <div className="text-xs text-gray-500 uppercase font-medium mb-2">Tags</div>
                     <div className="flex flex-wrap gap-1.5">
                       {account.tags.split(";").map((t: string) => t.trim()).filter(Boolean).map((t: string) => (
-                        <span key={t} className="text-xs bg-gray-100 text-gray-700 rounded px-2 py-0.5">{t}</span>
+                        <span key={t} className="text-xs bg-navy-50 text-navy rounded px-2 py-0.5">{t}</span>
                       ))}
                     </div>
                   </div>
@@ -212,13 +212,13 @@ export default async function CollegeDetail({ params }: PageProps) {
             label: "Contacts",
             count: contacts?.length ?? 0,
             content: (
-              <div className="bg-white border rounded-lg overflow-hidden">
+              <div className="bg-surface border rounded-lg overflow-hidden">
                 {!contacts?.length ? (
                   <div className="p-6 text-sm text-gray-500">No contacts linked.</div>
                 ) : (
                   <table className="w-full text-sm">
-                    <thead className="bg-gray-50 border-b">
-                      <tr className="text-left text-xs text-gray-500 uppercase">
+                    <thead className="bg-line-soft border-b border-line">
+                      <tr className="text-left text-[11px] tracking-wide text-ink-soft uppercase">
                         <th className="px-4 py-2 font-medium">Name</th>
                         <th className="px-4 py-2 font-medium hidden md:table-cell">Designation</th>
                         <th className="px-4 py-2 font-medium hidden md:table-cell">Mobile</th>
@@ -226,9 +226,9 @@ export default async function CollegeDetail({ params }: PageProps) {
                     </thead>
                     <tbody>
                       {contacts.map((c) => (
-                        <tr key={c.id} className="border-b last:border-b-0 hover:bg-gray-50">
+                        <tr key={c.id} className="border-b last:border-b-0 hover:bg-coral-50">
                           <td className="px-4 py-2.5">
-                            <Link href={`/contacts/${c.id}`} className="text-blue-600 hover:underline">
+                            <Link href={`/contacts/${c.id}`} className="text-coral-600 hover:underline">
                               {[c.first_name, c.full_name].filter(Boolean).join(" ") || "(unnamed)"}
                             </Link>
                           </td>
@@ -247,13 +247,13 @@ export default async function CollegeDetail({ params }: PageProps) {
             label: "Deals",
             count: deals?.length ?? 0,
             content: (
-              <div className="bg-white border rounded-lg overflow-hidden">
+              <div className="bg-surface border rounded-lg overflow-hidden">
                 {!deals?.length ? (
                   <div className="p-6 text-sm text-gray-500">No deals.</div>
                 ) : (
                   <table className="w-full text-sm">
-                    <thead className="bg-gray-50 border-b">
-                      <tr className="text-left text-xs text-gray-500 uppercase">
+                    <thead className="bg-line-soft border-b border-line">
+                      <tr className="text-left text-[11px] tracking-wide text-ink-soft uppercase">
                         <th className="px-4 py-2 font-medium">Title</th>
                         <th className="px-4 py-2 font-medium">Stage</th>
                         <th className="px-4 py-2 font-medium hidden md:table-cell">Value</th>
@@ -262,9 +262,9 @@ export default async function CollegeDetail({ params }: PageProps) {
                     </thead>
                     <tbody>
                       {deals.map((d) => (
-                        <tr key={d.id} className="border-b last:border-b-0 hover:bg-gray-50">
+                        <tr key={d.id} className="border-b last:border-b-0 hover:bg-coral-50">
                           <td className="px-4 py-2.5">
-                            <Link href={`/deals/${d.id}`} className="text-blue-600 hover:underline">
+                            <Link href={`/deals/${d.id}`} className="text-coral-600 hover:underline">
                               {d.opportunity_title || "(untitled)"}
                             </Link>
                           </td>
@@ -286,10 +286,10 @@ export default async function CollegeDetail({ params }: PageProps) {
             content: (
               <div className="space-y-3">
                 {!timeline.length ? (
-                  <div className="bg-white border rounded-lg p-6 text-sm text-gray-500">No activity recorded.</div>
+                  <div className="bg-surface border rounded-lg p-6 text-sm text-gray-500">No activity recorded.</div>
                 ) : (
                   timeline.map((item) => (
-                    <div key={item.id} className="bg-white border rounded-lg p-4">
+                    <div key={item.id} className="bg-surface border rounded-lg p-4">
                       <div className="flex items-start justify-between gap-3">
                         <div className="min-w-0 flex-1">
                           <div className="text-xs text-gray-500 uppercase font-medium">{item.kind}</div>

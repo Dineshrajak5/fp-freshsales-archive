@@ -33,13 +33,16 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
-      <div className="w-full max-w-sm bg-white rounded-lg shadow-sm border p-8">
-        <div className="mb-6">
-          <h1 className="text-xl font-semibold text-gray-900">
-            FP Freshsales Archive
+    <div className="min-h-screen flex items-center justify-center bg-canvas px-4">
+      <div className="w-full max-w-sm bg-surface rounded-xl border border-line shadow-sm p-8">
+        <div className="mb-7 flex flex-col items-center text-center">
+          <span className="w-11 h-11 rounded-lg bg-coral flex items-center justify-center text-white text-lg font-bold mb-3">
+            F
+          </span>
+          <h1 className="text-lg font-bold text-ink">
+            FACE Prep <span className="text-coral">Archive</span>
           </h1>
-          <p className="text-sm text-gray-500 mt-1">
+          <p className="text-sm text-ink-muted mt-1">
             Sign in to browse the archive
           </p>
         </div>
@@ -48,7 +51,7 @@ export default function LoginPage() {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-semibold text-ink mb-1"
             >
               Email
             </label>
@@ -58,7 +61,7 @@ export default function LoginPage() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-line rounded-md text-sm text-ink focus:outline-none focus:ring-2 focus:ring-coral focus:border-coral"
               autoComplete="email"
             />
           </div>
@@ -66,7 +69,7 @@ export default function LoginPage() {
           <div>
             <label
               htmlFor="password"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-semibold text-ink mb-1"
             >
               Password
             </label>
@@ -76,13 +79,13 @@ export default function LoginPage() {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-line rounded-md text-sm text-ink focus:outline-none focus:ring-2 focus:ring-coral focus:border-coral"
               autoComplete="current-password"
             />
           </div>
 
           {error && (
-            <div className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-md px-3 py-2">
+            <div className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-md px-3 py-2">
               {error}
             </div>
           )}
@@ -90,13 +93,13 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 text-white text-sm font-medium py-2 rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-coral text-white text-sm font-semibold py-2.5 rounded-md hover:bg-coral-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
           >
             {loading ? "Signing in..." : "Sign in"}
           </button>
         </form>
 
-        <p className="text-xs text-gray-400 mt-6 text-center">
+        <p className="text-xs text-ink-soft mt-6 text-center">
           Access is restricted to authorised FACE Prep users.
         </p>
       </div>
