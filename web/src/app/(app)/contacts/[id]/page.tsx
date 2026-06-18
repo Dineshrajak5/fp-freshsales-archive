@@ -78,14 +78,14 @@ export default async function ContactDetail({ params }: PageProps) {
   };
 
   const timeline: TimelineItem[] = [
-    ...(linkedNotes as Array<{ id: string; description: string; created_at: string }>).map((n) => ({
+    ...(linkedNotes as unknown as Array<{ id: string; description: string; created_at: string }>).map((n) => ({
       id: `note-${n.id}`,
       kind: "note" as const,
       title: "Note",
       body: n.description,
       date: n.created_at,
     })),
-    ...(linkedTasks as Array<{ id: string; title: string; description: string; status: string; task_type: string; created_at: string; completed_date: string }>).map((t) => ({
+    ...(linkedTasks as unknown as Array<{ id: string; title: string; description: string; status: string; task_type: string; created_at: string; completed_date: string }>).map((t) => ({
       id: `task-${t.id}`,
       kind: "task" as const,
       title: t.title || "Task",
@@ -93,7 +93,7 @@ export default async function ContactDetail({ params }: PageProps) {
       date: t.completed_date || t.created_at,
       meta: `${t.task_type || "Task"} - ${t.status || ""}`,
     })),
-    ...(linkedMeetings as Array<{ id: string; title: string; description: string; location: string; from_date: string; created_at: string }>).map((m) => ({
+    ...(linkedMeetings as unknown as Array<{ id: string; title: string; description: string; location: string; from_date: string; created_at: string }>).map((m) => ({
       id: `meeting-${m.id}`,
       kind: "meeting" as const,
       title: m.title || "Meeting",
@@ -101,7 +101,7 @@ export default async function ContactDetail({ params }: PageProps) {
       date: m.from_date || m.created_at,
       meta: m.location || null,
     })),
-    ...((calls ?? []) as Array<{ id: string; call_type: string; notes: string; created_at: string }>).map((c) => ({
+    ...((calls ?? []) as unknown as Array<{ id: string; call_type: string; notes: string; created_at: string }>).map((c) => ({
       id: `call-${c.id}`,
       kind: "call" as const,
       title: `Call (${c.call_type || "-"})`,
