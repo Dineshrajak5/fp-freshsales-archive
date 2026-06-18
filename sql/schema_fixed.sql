@@ -694,9 +694,7 @@ CREATE INDEX IF NOT EXISTS idx_account_contacts_id ON account_contacts(id);
 
 CREATE INDEX IF NOT EXISTS idx_contacts_id ON contacts(id);
 
-CREATE INDEX IF NOT EXISTS idx_contact_emails_id ON contact_emails(id);
 
-CREATE INDEX IF NOT EXISTS idx_contact_phones_id ON contact_phones(id);
 
 CREATE INDEX IF NOT EXISTS idx_opportunities_id ON opportunities(id);
 
@@ -704,9 +702,7 @@ CREATE INDEX IF NOT EXISTS idx_opportunity_contacts_id ON opportunity_contacts(i
 
 CREATE INDEX IF NOT EXISTS idx_leads_id ON leads(id);
 
-CREATE INDEX IF NOT EXISTS idx_lead_emails_id ON lead_emails(id);
 
-CREATE INDEX IF NOT EXISTS idx_lead_phones_id ON lead_phones(id);
 
 CREATE INDEX IF NOT EXISTS idx_users_id ON users(id);
 
