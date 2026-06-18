@@ -50,7 +50,7 @@ export default async function CollegeDetail({ params }: PageProps) {
       .select(idColumn)
       .eq("related_to_id", id)
       .eq("related_to_type", "SalesAccount");
-    const ids = (links ?? []).map((r: Record<string, string>) => r[idColumn]).filter(Boolean);
+    const ids = ((links ?? []) as unknown as Array<Record<string, string>>).map((r) => r[idColumn]).filter(Boolean);
     if (!ids.length) return [];
     const { data } = await supabase.from(mainTable).select(fields).in("id", ids);
     return data ?? [];
