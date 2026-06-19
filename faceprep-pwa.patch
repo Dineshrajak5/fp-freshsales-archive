@@ -1,0 +1,408 @@
+diff --git a/web/public/apple-touch-icon.png b/web/public/apple-touch-icon.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..47f9ea38b486b51283930b589a23198684f53607
+GIT binary patch
+literal 1632
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/web/public/icon-192.png b/web/public/icon-192.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..93862c6292916d0b800668368c2f40244f2120f4
+GIT binary patch
+literal 1531
+zcmeAS@N?(olHy`uVBq!ia0vp^2SAvE4M+yv$zf+;U_IpN;uumf=k49Sc`~6gZ6CkS
+zxm#!_o5Ll-;_JcS$js5%-N1EFcS+;y2W%52>|l72StIN)UyaLE!$ZL3P^Z$(&h+$i
+z^ON?7#q)lf_w~%a^Xm)EcYm9go>pe_+-H&qlh4!7b<77Ul^7zFX^dvi|1SMw_1}Jb
+zi}%|%2nkMd@|s$vUn}x9&-7OHhV}mSJC@Ix<n>|6>dO+L46}<Yv@(B0zW%PMxYX-*
+z*=EgTJ_}K%22<kD*1)su2Y#ONJms~@cIz_vi%(>k4s;3yt+e}dyp>^ril)lm-Nml?
+zIq^Z!URx#86*J#ItXsPFe?1Gs*`Oftg}2S)FQw=2UG*(vq1si?1^g?2zB{gU+m07#
+z#$neL`QlY~%C54xbrzmYQ)8HOB68N!HIb8^O`W#o#pxaUk_8-8Yel|p-KLu<*t#?z
+ztbswRvT$|axy&Eewm({2r@62uah>?KA3x4@?N4Bhyk!1eK6C%;DW!V?u5pQaPJb3z
+zK2OGL(xEq(o@xm?uzFq+FR#DYe7H<^{qdO>UJ5#>TAz*CzqGYT>fgZ-=Zu*Dp>vg(
+zRxIfc5MQ{ait)jl9g=+4I2edRJ7lYrijE!?X%l^DGvCgiK{&A3&#~HOWm=-e&Nc=&
+zou!Gp9%qN^y?XsUKV<f=87g0wzWACwy=21+)74v4PDuzJ=+K?6b0;tD*N0zyzq+hn
+zsJyJy%<_(?HB@Qfe4+ehM{LOasF}svr2Yso`Z!H8IX`pfQPCZ&{C|4y3MR--|0ScZ
+z?l;w!p<CnD-K;Nf&-Z_Mx;Osnl91fDexAGP3sgE)1CO0kW5|qP|Nnh)>pQ#JvU~Zg
+z%88;4D!H1P>X~(a0y?5@eD-gSWtcea{Gp@?O{*OY+!;2w5khI@<}X(9a)(`=$-FIw
+zXZ5p15$`x2^t45<dVME+@1EG-8?-~W@iSR$jt<w)T0V1icf`*^1@)Ev4^5p8%d}~F
+zOFc{O;bfc><majC6u-CJS$^-H)yup6HgEamZ*H=N@A}a+ortM!W}KZ2=T>OD#<twj
+zm=!9qDDwDnC*|A4d0b2pjcXFmADe#lrDP~W?8@?Kx4mC2Uh&8~p~+43z`NFEx3=vT
+znw4w1>rT$0nI>VWA&hTq|17?>&08hc9F#6RR+T;!3N~KFVE6Oi@~wNr@_!g`{JFh?
+z>4d1B^1oo04d0J<2C@d+&`v)4!;K@Gg@Guvc$aL|)JY+!Gbb&bGpTEdsZXMVtF*L(
+zN9cT(^^bF}M+k7g-dxD2Bfh38{rM)l{iU((wSnslT!Oh=Rrc1t-866NqB)kc=Pc^w
+zPO!X^AGdeK?fiX<E|rBYkCH3ddux;A>TQ;{b}&r4C1hol^)=;UcGyRm)M-Y|^@q&N
+z8dO$#MizgarQW9TPg<Fos8owJahsI|?J@D`@%Ne>zawks^jW{&D`u9=KX!~Qz^Uq9
+z`>miWN4M~oD0+H&iHh%vp1xvd)O}4A+5feS?w9YGGNro^N;3o#6+s2x)VbbS3%9#!
+Ra{~)?22WQ%mvv4FO#r?5a1H<f
+
+literal 0
+HcmV?d00001
+
+diff --git a/web/public/icon-512.png b/web/public/icon-512.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..48cbbf307e043ce721338eb7c5f96c290a42e717
+GIT binary patch
+literal 3421
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/web/public/icon-maskable-512.png b/web/public/icon-maskable-512.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..b1d6d8c7d517d86fce19b2798900f034b587492f
+GIT binary patch
+literal 3346
+zcmeHKSx}Q#82u6`0@b46NW}!y1XmO#DvJSE2pKwH7X&1-2q9H02tP|8K;l9Jm4b-{
+zrU?QwcBHlj#0{cgqSk~ZMy*Ofc8Cd`utXxnK!C<R_-3b%%+#lQ=iK@3d~@zM=bW2=
+zAds}k+QAwC7Lon;e+7UxZP8$9VOrkMpHBfS>>%&o^9{Xhq`R@uB|KZwpB}82`IKcp
+z>Hpf?VpUiZ*R0^o?$|Eyr<_FW5Uav0GkKns|E91)%;KFlYtLX<OL`-{oXQ%j?ku}^
+z!ll*C%i$^G*zF!Q=a%2jY1fG_1d+iZsYQ4K>@KEiP{5L|1*kj+z}jnS#o7vB9sVQm
+z|Kj6Gk_JU5ij0!dI>-KEhnVBu_ctOuf)ralMx^;<GGq#o-pNo}F}s7kHMtzo)K;E?
+zb;*>;x|26T2}pZ1$ULv(J9=CC{?aW2SZWJ!z#m}uDilDj`8)%L>L&mcvCG4Qw8sR9
+z#)|HOhCbBsbHlj+bk<`ZW{H};uT3^QazyNPelAO+4==ihTLNICEs8X@W=+^R$#+&E
+zCAAfuzxr`YH9XPVDrRTqQpfyv<@|z%w9w=_IVLS-pV;56+dje<fGFlE%VM#Fj;DOU
+zH9NR_Y<qXz7Rik6S<I*=pT&tSz;4R3QD)kFfV!p_)`?G47|%zkq@WAE;k0C4xet4j
+zCC~@rxHL9LVZ#=Xg!Q^IVWY75sZOmOG6!OGJhyY}`02WyR-4{zS2nfdMaTH<>Wo3U
+z%r&CRnXIZlxFCoRthK{L1yR)aC_U#*tMP%J*)ZWzQ&#gbSBir^YnQ><i-&Atltlf_
+zfYJEvC%nypl5Y^rqKrbKh2{Kv+V?Y87;Xc@t!`Xr9HQA1!Kqc`en|qbzbTLH9+|A@
+zqQ)KfHm9%vHXp(NOunn-s0~KGQ_I=Z(NS;7_U5W`EaFa+j2<MdKmp|sH$OR|O58Qw
+zoTbrKG#ehSXH%K#ma(o2V}p{}$HjIa_H9HCA(^k;L@$p5Ml#S<ad@!_+=TNibY@eP
+zaqS!WFOMs%{)Mk5HC+8Po~xtOISvlUHL|1CVfyK(Q(`}J2uWNc#Nr+&Ce%5;8Zb4Y
+z9bQx8boh$d<^WjQ(Q8O@Qz$!<l%k&5?7Pz!BWdKc3GbA6uA(Slc7i4f;L3zmFHqsO
+z;5$kGETe^|D2d6@ww*Q3i01TdgAK`y0*|N_Xx8uU=P{+62cOUBif=Fogzg1E`3a)z
+z<KpDV=nfN2-xY=AqF6R7=c_NIbY;S~1g?uoxFip;v-Ou|1Pdq0Aja{@awNfoHHt2k
+zYG&Ik7<lO8xRBfMOr1(+>{j~}*9ECDsvLQ#l-ngBL>k`e8W<6TxND=dj63dJ8TR}2
+zOdhaE*9thPa^nkjWUKq!)H5ODwVV6S%#Bg19J>rnio7*dRbT&bh*yA*A&H8zwxFPB
+z_>~u;AE)Nb3~ZKCnG3p7u|n_R#KTwJ(cswOpG+vhlyC;yd&9=NuSo<f?VFLYAv4HY
+z`9Z-P_XOWS&Fu+G`}Fc=(|BZ`SuZ|q$y)8iNW1<INRaaP^>|DLThJ{@k5)%c_vlSh
+zKCY4_EjJh#>H4{DI))X$3Vtx^f^tk1KwN^ZY>JllzS(Z4M*)##((_w;&{~qCnfbgA
+z0(87?&S>8Lr^&VYvT=I;VAZY^ej?L=WaLnidDEAlb7C(LoHEjyI@8q{NyI@53JxVc
+zztzu;HvTfYxzuOMucyIVxs4`iJAJr4L*5XoPPlJTABbkHrLD=(XUY2$l-m>q7o5eR
+zlSr^xeT3=Y=yDv}IZS;u4Bdb(6wG6Ld#{22-FM$PqIQl)(99HFiP1#U^E}y#Ve239
+zh+H7;TVe&}zfkc~PONa(mLzZ0bPYCyiuYXPO0hF>ij+4ej><i$%7p6Wwtc^qsb%;4
+yl2c3YV**WEj5g2DR*?mj1$;n#445DDH4~}>LpJQH3B{QHIzaXf++V#n>eSza`?350
+
+literal 0
+HcmV?d00001
+
+diff --git a/web/public/offline.html b/web/public/offline.html
+new file mode 100644
+index 0000000..5a96080
+--- /dev/null
++++ b/web/public/offline.html
+@@ -0,0 +1,26 @@
++<!doctype html>
++<html lang="en">
++  <head>
++    <meta charset="utf-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1" />
++    <title>Offline — FACE Prep Archive</title>
++    <style>
++      * { box-sizing: border-box; margin: 0; }
++      body { font-family: Arial, Helvetica, sans-serif; background: #fafafa; color: #1f2937; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
++      .card { max-width: 360px; text-align: center; }
++      .mark { width: 64px; height: 64px; border-radius: 14px; display: block; margin: 0 auto 20px; }
++      h1 { font-size: 20px; color: #111827; margin-bottom: 8px; }
++      p { font-size: 14px; color: #6b7280; line-height: 1.5; margin-bottom: 22px; }
++      button { background: #f05136; color: #fff; border: 0; font-size: 14px; font-weight: 700; padding: 11px 22px; border-radius: 8px; cursor: pointer; }
++      button:active { background: #b5381c; }
++    </style>
++  </head>
++  <body>
++    <div class="card">
++      <img class="mark" src="/icon-192.png" alt="FACE Prep Archive" />
++      <h1>You're offline</h1>
++      <p>The FACE Prep Archive needs a connection to load records. Reconnect and try again.</p>
++      <button onclick="location.reload()">Retry</button>
++    </div>
++  </body>
++</html>
+diff --git a/web/public/sw.js b/web/public/sw.js
+new file mode 100644
+index 0000000..e1c7743
+--- /dev/null
++++ b/web/public/sw.js
+@@ -0,0 +1,59 @@
++const CACHE = "fp-archive-v1";
++const PRECACHE = [
++  "/offline.html",
++  "/faceprep.svg",
++  "/freshsales.png",
++  "/icon-192.png",
++  "/apple-touch-icon.png",
++];
++
++self.addEventListener("install", (event) => {
++  event.waitUntil(
++    caches.open(CACHE).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting())
++  );
++});
++
++self.addEventListener("activate", (event) => {
++  event.waitUntil(
++    caches
++      .keys()
++      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
++      .then(() => self.clients.claim())
++  );
++});
++
++self.addEventListener("fetch", (event) => {
++  const req = event.request;
++  if (req.method !== "GET") return;
++
++  const url = new URL(req.url);
++
++  // Cross-origin (Supabase API, auth, storage): never touch. Always live, never stored on device.
++  if (url.origin !== self.location.origin) return;
++
++  const isStatic =
++    url.pathname.startsWith("/_next/static/") ||
++    url.pathname.startsWith("/icon-") ||
++    PRECACHE.includes(url.pathname) ||
++    url.pathname === "/manifest.webmanifest";
++
++  if (isStatic) {
++    event.respondWith(
++      caches.match(req).then(
++        (hit) =>
++          hit ||
++          fetch(req).then((res) => {
++            const copy = res.clone();
++            caches.open(CACHE).then((c) => c.put(req, copy));
++            return res;
++          })
++      )
++    );
++    return;
++  }
++
++  if (req.mode === "navigate") {
++    event.respondWith(fetch(req).catch(() => caches.match("/offline.html")));
++    return;
++  }
++});
+diff --git a/web/src/app/(app)/layout.tsx b/web/src/app/(app)/layout.tsx
+index b9cda20..815b446 100644
+--- a/web/src/app/(app)/layout.tsx
++++ b/web/src/app/(app)/layout.tsx
+@@ -1,10 +1,12 @@
+ import { AppHeader } from "@/components/app-header";
++import { MobileNav } from "@/components/mobile-nav";
+ 
+ export default function AppLayout({ children }: { children: React.ReactNode }) {
+   return (
+     <div className="min-h-screen bg-canvas">
+       <AppHeader />
+-      <main>{children}</main>
++      <main className="pb-20 sm:pb-0">{children}</main>
++      <MobileNav />
+     </div>
+   );
+ }
+diff --git a/web/src/app/layout.tsx b/web/src/app/layout.tsx
+index f0bf1f9..3b1766c 100644
+--- a/web/src/app/layout.tsx
++++ b/web/src/app/layout.tsx
+@@ -1,6 +1,7 @@
+-import type { Metadata } from "next";
++import type { Metadata, Viewport } from "next";
+ import { Nunito_Sans } from "next/font/google";
+ import "./globals.css";
++import { SWRegister } from "@/components/sw-register";
+ 
+ const nunitoSans = Nunito_Sans({
+   variable: "--font-nunito",
+@@ -11,6 +12,23 @@ export const metadata: Metadata = {
+   title: "FACE Prep Archive",
+   description:
+     "Browse the FACE Prep Freshsales archive — colleges, contacts, and deals.",
++  applicationName: "FACE Prep Archive",
++  appleWebApp: {
++    capable: true,
++    statusBarStyle: "black-translucent",
++    title: "FP Archive",
++  },
++  icons: {
++    icon: "/icon-192.png",
++    apple: "/apple-touch-icon.png",
++  },
++};
++
++export const viewport: Viewport = {
++  themeColor: "#000000",
++  width: "device-width",
++  initialScale: 1,
++  viewportFit: "cover",
+ };
+ 
+ export default function RootLayout({
+@@ -20,7 +38,10 @@ export default function RootLayout({
+ }>) {
+   return (
+     <html lang="en" className={`${nunitoSans.variable} h-full antialiased`}>
+-      <body className="min-h-full flex flex-col">{children}</body>
++      <body className="min-h-full flex flex-col">
++        {children}
++        <SWRegister />
++      </body>
+     </html>
+   );
+ }
+diff --git a/web/src/app/manifest.ts b/web/src/app/manifest.ts
+new file mode 100644
+index 0000000..5d48b2c
+--- /dev/null
++++ b/web/src/app/manifest.ts
+@@ -0,0 +1,21 @@
++import type { MetadataRoute } from "next";
++
++export default function manifest(): MetadataRoute.Manifest {
++  return {
++    name: "FACE Prep Archive",
++    short_name: "FP Archive",
++    description:
++      "Browse the FACE Prep Freshsales archive — colleges, contacts, and deals.",
++    start_url: "/",
++    scope: "/",
++    display: "standalone",
++    orientation: "portrait",
++    background_color: "#ffffff",
++    theme_color: "#000000",
++    icons: [
++      { src: "/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
++      { src: "/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any" },
++      { src: "/icon-maskable-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
++    ],
++  };
++}
+diff --git a/web/src/components/mobile-nav.tsx b/web/src/components/mobile-nav.tsx
+new file mode 100644
+index 0000000..231afac
+--- /dev/null
++++ b/web/src/components/mobile-nav.tsx
+@@ -0,0 +1,38 @@
++"use client";
++
++import Link from "next/link";
++import { usePathname } from "next/navigation";
++import { Building2, Users, Briefcase } from "lucide-react";
++
++const NAV = [
++  { href: "/colleges", label: "Colleges", icon: Building2 },
++  { href: "/contacts", label: "Contacts", icon: Users },
++  { href: "/deals", label: "Deals", icon: Briefcase },
++];
++
++export function MobileNav() {
++  const pathname = usePathname();
++
++  return (
++    <nav
++      className="sm:hidden fixed bottom-0 inset-x-0 z-30 bg-surface border-t border-line flex"
++      style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
++    >
++      {NAV.map(({ href, label, icon: Icon }) => {
++        const active = pathname.startsWith(href);
++        return (
++          <Link
++            key={href}
++            href={href}
++            className={`flex-1 flex flex-col items-center gap-0.5 py-2.5 text-[11px] font-semibold transition ${
++              active ? "text-coral" : "text-ink-muted"
++            }`}
++          >
++            <Icon className="w-5 h-5" />
++            {label}
++          </Link>
++        );
++      })}
++    </nav>
++  );
++}
+diff --git a/web/src/components/sw-register.tsx b/web/src/components/sw-register.tsx
+new file mode 100644
+index 0000000..efa1df0
+--- /dev/null
++++ b/web/src/components/sw-register.tsx
+@@ -0,0 +1,17 @@
++"use client";
++
++import { useEffect } from "react";
++
++export function SWRegister() {
++  useEffect(() => {
++    if (
++      process.env.NODE_ENV === "production" &&
++      typeof navigator !== "undefined" &&
++      "serviceWorker" in navigator
++    ) {
++      navigator.serviceWorker.register("/sw.js").catch(() => {});
++    }
++  }, []);
++
++  return null;
++}
