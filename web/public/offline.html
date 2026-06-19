@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Offline — FACE Prep Archive</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; }
+      body { font-family: Arial, Helvetica, sans-serif; background: #fafafa; color: #1f2937; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+      .card { max-width: 360px; text-align: center; }
+      .mark { width: 64px; height: 64px; border-radius: 14px; display: block; margin: 0 auto 20px; }
+      h1 { font-size: 20px; color: #111827; margin-bottom: 8px; }
+      p { font-size: 14px; color: #6b7280; line-height: 1.5; margin-bottom: 22px; }
+      button { background: #f05136; color: #fff; border: 0; font-size: 14px; font-weight: 700; padding: 11px 22px; border-radius: 8px; cursor: pointer; }
+      button:active { background: #b5381c; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img class="mark" src="/icon-192.png" alt="FACE Prep Archive" />
+      <h1>You're offline</h1>
+      <p>The FACE Prep Archive needs a connection to load records. Reconnect and try again.</p>
+      <button onclick="location.reload()">Retry</button>
+    </div>
+  </body>
+</html>
